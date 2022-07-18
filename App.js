@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Button, View, Text , TouchableHighlight} from 'react-native';
+import { StyleSheet, Button, View, Text , TouchableHighlight, TouchableOpacity} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -12,32 +12,26 @@ function HomeScreen({ navigation }) {
     <View style={styles.appContainer}>
       <Text style={styles.title}>Welcome</Text>
       <View style={styles.space} />
-      <TouchableHighlight style={styles.buttonWrapper}>
-        <Button
-          style={styles.button}
-          title="Science"
-          color="#fff"
-          onPress={() => navigation.navigate("Science")}
-        />
-      </TouchableHighlight>
-      <View style={styles.space} />
-      <TouchableHighlight style={styles.buttonWrapper}>
-      <Button
+      <TouchableOpacity
         style={styles.button}
-        title="Maths"
-        color="#fff"
+        onPress={() => navigation.navigate("Science")}
+      >
+        <Text style={styles.buttonText}>Science</Text>
+      </TouchableOpacity>
+      <View style={styles.space} />
+      <TouchableOpacity
+        style={styles.aButton}
         onPress={() => navigation.navigate("Maths")}
-      />
-      </TouchableHighlight>
+      >
+        <Text style={styles.aButtonText}>Maths</Text>
+      </TouchableOpacity>
       <View style={styles.space} />
-      <TouchableHighlight style={styles.buttonWrapper}>
-      <Button
+      <TouchableOpacity
         style={styles.button}
-        title="Stories"
-        color="#fff"
         onPress={() => navigation.navigate("Stories")}
-      />
-      </TouchableHighlight>
+      >
+        <Text style={styles.buttonText}>Stories</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -65,6 +59,7 @@ const styles = StyleSheet.create({
     paddingTop: 150,
     paddingHorizontal: 16,
     alignItems: "center",
+    backgroundColor:"#BFFCF9"
   },
   title: {
     fontSize: 50,
@@ -72,23 +67,46 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginVertical: 4,
+    color:'black'
+  },
+  buttonText: {
+    color: "#fff",
+    fontSize: 18
+  },
+  aButtonText: {
+    color: "#fff",
+    fontSize: 18
   },
   button: {
-    marginBottom: 20,
-    padding: 30,
-    color:"#841584"
+    padding:5,
+    height:60,
+    width:260,
+    backgroundColor:'#f31282',
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius:15,
+    shadowOpacity: 1,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 0 },
+    shadowColor: '#F31247',
+    elevation: 5
   },
-  buttonWrapper: {
-    height: 40,
-    width: 160,
-    borderRadius: 10,
-    backgroundColor: '#24a0ed',
-    marginLeft: 50,
-    marginRight: 50,
-    marginTop: 20,
+  aButton: {
+    padding:5,
+    height:60,
+    width:260,
+    backgroundColor:'#b180f0',
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius:15,
+    shadowOpacity: 1,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 0 },
+    shadowColor: '#9B80F0',
+    elevation: 5
   },
   space: {
-    width: 20, // or whatever size you need
-    height: 20,
+    width: 20,
+    height: 35,
   },
 });
