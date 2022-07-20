@@ -3,9 +3,9 @@ import { StyleSheet, Button, View, Text , TouchableHighlight, TouchableOpacity} 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import MathsScreen from './components/MathsScreen';
-import ScienceScreen from './components/ScienceScreen';
-import StoriesScreen from './components/StoriesScreen';
+import MathsScreen from './screens/MathsScreen';
+import ScienceScreen from './screens/ScienceScreen';
+import StoriesScreen from './screens/StoriesScreen';
 
 function HomeScreen({ navigation }) {
   return (
