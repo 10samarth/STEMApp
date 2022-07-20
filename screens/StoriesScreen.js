@@ -1,10 +1,12 @@
 import { StyleSheet, View, Text } from "react-native";
+import Menu from "../components/Menu";
 
-function StoriesScreen() {
+function StoriesScreen({navigation}) {
   return (
     <View style={styles.appContainer}>
-      <Text>Stories Screen</Text>
-    </View>
+    <Text>Menu</Text>
+    <Menu nav = {navigation} />
+  </View>
   );
 }
 

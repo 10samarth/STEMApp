@@ -6,6 +6,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MathsScreen from './screens/MathsScreen';
 import ScienceScreen from './screens/ScienceScreen';
 import StoriesScreen from './screens/StoriesScreen';
+import ContentCard from './components/Cards/ContentCard';
+import Menu from './components/Menu';
 
 function HomeScreen({ navigation }) {
   return (
@@ -46,6 +48,8 @@ function App() {
         <Stack.Screen name="Science" component={ScienceScreen} />
         <Stack.Screen name="Maths" component={MathsScreen} />
         <Stack.Screen name="Stories" component={StoriesScreen} />
+        <Stack.Screen name="Article" component={ContentCard} />
+        <Stack.Screen name="Menu" component={Menu} />
       </Stack.Navigator>
     </NavigationContainer>
   );

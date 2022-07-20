@@ -1,10 +1,12 @@
 import { StyleSheet, View, Text } from "react-native";
+import Menu from "../components/Menu";
 
-function MathsScreen() {
+function MathsScreen({navigation}) {
   return (
     <View style={styles.appContainer}>
-      <Text>Maths Screen</Text>
-    </View>
+    <Text>Menu</Text>
+    <Menu nav = {navigation} />
+  </View>
   );
 }
 

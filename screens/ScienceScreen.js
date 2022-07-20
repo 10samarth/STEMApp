@@ -1,17 +1,14 @@
-import { StyleSheet, View, Text } from "react-native";
-import { useNavigation } from '@react-navigation/native';
+import { StyleSheet, View, Text, Button} from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ContentCard from "../components/Cards/ContentCard";
+import Menu from "../components/Menu";
 
-function ScienceScreen() {
-  const navigation = useNavigation();
-  const screenName = ContentCard;
+function ScienceScreen({navigation}) {
   return (
     <View style={styles.appContainer}>
-      <Text>Science Screen</Text>
-      <Button
-        title={`Go to ${screenName}`}
-        onPress={() => navigation.navigate(screenName)}
-      />
+      <Text>Menu</Text>
+      <Menu nav = {navigation} />
     </View>
   );
 }
