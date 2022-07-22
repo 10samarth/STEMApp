@@ -3,12 +3,18 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ContentCard from "../components/Cards/ContentCard";
 import Menu from "../components/Menu";
+import list from "../assets/content/Science/scientist"
 
 function ScienceScreen({navigation}) {
+  let props = {
+    navigation,
+    list
+  }
+  console.log(list)
   return (
     <View style={styles.appContainer}>
       <Text>Menu</Text>
-      <Menu nav = {navigation} />
+      <Menu {... props}/>
     </View>
   );
 }
