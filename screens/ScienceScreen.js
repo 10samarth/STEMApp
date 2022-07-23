@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ContentCard from "../components/Cards/ContentCard";
 import Menu from "../components/Menu";
-import list from "../assets/content/Science/scientist"
+import list from "../assets/content/Science/ScienceMenu"
 
 function ScienceScreen({navigation}) {
   let props = {

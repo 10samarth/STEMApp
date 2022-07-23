@@ -12,7 +12,7 @@ const Menu = (props) => {
           bottomDivider
           onPress={() =>
             props.navigation.navigate("Article", {
-              name: l.name,
+              name: l.name
             })
           }
         >
