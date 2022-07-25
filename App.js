@@ -1,7 +1,10 @@
+import { registerRootComponent } from 'expo';
+
 import * as React from 'react';
 import { StyleSheet, Button, View, Text , TouchableHighlight, TouchableOpacity} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 
 import MathsScreen from './screens/MathsScreen';
 import ScienceScreen from './screens/ScienceScreen';
@@ -54,6 +57,7 @@ function App() {
     </NavigationContainer>
   );
 }
+
 
 export default App;
 

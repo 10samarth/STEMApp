@@ -2,8 +2,7 @@ import { ListItem, Avatar } from "@rneui/themed";
 import { StyleSheet, View} from "react-native";
 
 const Menu = (props) => {
-  const data = props.list;
-  console.log(props)
+  const data = props.sciData;
   return (
     <View style={styles.container}>
       {data.map((l, i) => (
@@ -12,7 +11,7 @@ const Menu = (props) => {
           bottomDivider
           onPress={() =>
             props.navigation.navigate("Article", {
-              name: l.name
+              data: l
             })
           }
         >

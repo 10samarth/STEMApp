@@ -1,5 +1,8 @@
 import { ScrollView, StyleSheet, View, Image } from "react-native";
+import React, { useState, useCallback, useRef } from "react";
 import { Text, Card, Button, Icon } from "@rneui/themed";
+import YoutubePlayer from "react-native-youtube-iframe";
+
 
 const users = [
   {
@@ -31,73 +34,107 @@ const users = [
 ];
 
 const ContentCard = (props) => {
-  const name = props.route.params.name;
+  const data = props.route.params.data;
+  const [playing, setPlaying] = useState(false);
+  const onStateChange = useCallback((state) => {    if (state === "ended") {      setPlaying(false);      Alert.alert("video has finished playing!");    }  }, []);
+  const togglePlaying = useCallback(() => {    setPlaying((prev) => !prev);  }, []);
+  
   return (
     <>
       <ScrollView>
         <View style={styles.container}>
           <Card>
-            <Card.Title>{name}</Card.Title>
-            <Card.Divider />
-            {users.map((u, i) => {
-              return (
-                <View key={i} style={styles.user}>
-                  <Image
-                    style={styles.image}
-                    resizeMode="cover"
-                    source={{ uri: u.avatar }}
-                  />
-                  <Text style={styles.name}>{u.name}</Text>
-                </View>
-              );
-            })}
-          </Card>
-          <Card containerStyle={{ marginTop: 15 }}>
-            <Card.Title>FONTS</Card.Title>
-            <Card.Divider />
-            <Text style={styles.fonts} h1>
-              h1 Heading
-            </Text>
-            <Text style={styles.fonts} h2>
-              h2 Heading
-            </Text>
-            <Text style={styles.fonts} h3>
-              h3 Heading
-            </Text>
-            <Text style={styles.fonts} h4>
-              h4 Heading
-            </Text>
-            <Text style={styles.fonts}>Normal Text</Text>
-          </Card>
-          <Card>
-            <Card.Title>HELLO WORLD</Card.Title>
+            <Card.Title>{data.name}</Card.Title>
             <Card.Divider />
             <Card.Image
-              style={{ padding: 0 }}
+              style={{ padding: 0, width: "100%", height: 300 }}
+              resizeMode="contain"
               source={{
-                uri: "https://awildgeographer.files.wordpress.com/2015/02/john_muir_glacier.jpg",
+                uri: data.avatar_url,
               }}
             />
-            <Text style={{ marginBottom: 10 }}>
-              The idea with React Native Elements is more about component
-              structure than actual design.
+
+            <Text style={{ marginBottom: 5, marginTop: 20 }}>
+              Born: {data.birthDate}
             </Text>
-            <Button
-              icon={
-                <Icon
-                  name="code"
-                  color="#ffffff"
-                  iconStyle={{ marginRight: 10 }}
-                />
-              }
-              buttonStyle={{
-                borderRadius: 0,
-                marginLeft: 0,
-                marginRight: 0,
-                marginBottom: 0,
+
+            <Text style={{ marginBottom: 5, marginTop: 5 }}>
+              Died: {data.deathDate}
+            </Text>
+
+            <Text style={{ marginBottom: 5, marginTop: 5 }}>
+              Awards:{" "}
+              {data.awards.map((u, i) => {
+                return (
+                  <Text key={i} style={{ marginBottom: 5, marginTop: 5 }}>{u} </Text>
+                );
+              })}
+            </Text>
+
+            <Text style={{ marginBottom: 5, marginTop: 5 }}>
+              {data.summary}
+            </Text>
+          </Card>
+
+          <Card>
+            <Card.Title>Work</Card.Title>
+            <Card.Divider />
+            <Card.Image
+              style={{ padding: 0, width: "100%", height: 300 }}
+              resizeMode="contain"
+              source={{
+                uri: data.imageWork,
               }}
-              title="VIEW NOW"
             />
+            <Text style={{ marginBottom: 5, marginTop: 5 }}>{data.cardA}</Text>
+          </Card>
+
+          <Card>
+            <Card.Title>Legacy</Card.Title>
+            <Card.Divider />
+            <Card.Image
+              style={{ padding: 0, width: "100%", height: 300 }}
+              resizeMode="contain"
+              source={{
+                uri: data.imageLegacy,
+              }}
+            />
+            <Text style={{ marginBottom: 5, marginTop: 5 }}>{data.cardB}</Text>
+          </Card>
+
+          <Card>
+            <Card.Title>Video</Card.Title>
+            <Card.Divider />
+            <View style={{ flex: 1 }}>
+              <YoutubePlayer
+                height={200}
+                play={playing}
+                videoId={data.youtube}
+                onChangeState={onStateChange}
+              />
+              <Button
+                title={playing ? "pause" : "play"}
+                onPress={togglePlaying}
+              />
+            </View>
+          </Card>
+
+          <Card>
+            <Card.Title>Reference</Card.Title>
+            <Card.Divider />
+            <Text style={{ marginBottom: 5, marginTop: 5 }}>
+              {data.links.map((u, i) => {
+                return (
+                  <Text
+                    key={i}
+                    style={{ margin: 3, color: "blue" }}
+                    onPress={() => Linking.openURL(u)}
+                  >
+                    {u + "\n" + "\n"}
+                  </Text>
+                );
+              })}
+            </Text>
           </Card>
         </View>
       </ScrollView>
