@@ -64,11 +64,11 @@ const sciData = [
       birthDate: "23 September 1917",
       deathDate: "22 November 2006 (aged 89)",
       awards: ["C.V Raman award","P.C Ray Award","the S.S Bhatnagar award"],
-      summary:"Asima Chatterjee was born on 23-09-1917 in Kolkata in the state of West Bengal, India. She was an Indian Chemist, Professor & Scientist. She was an organic chemist noted for her work in the fields of organic chemistry and phytomedicine. She also authored a considerable volume of work on medicinal plants of the Indian subcontinent. She was the first woman to receive a Doctorate of Science from an Indian university. As she was the first female to receive a doctorate and even started a chemistry department in the Lady Brabourne College of the University of Calcutta she inspired a lot of women in that time of India to pursue their dreams and work as innovators and specialists.",
+      summary:"Asima Chatterjee was born on 23-09-1917 in Kolkata in the state of West Bengal, India. She was an Indian Chemist, Professor & Scientist. ",
       cardA:"She was born in a traditional Bengali film. She was excellent in her academics and after completion of her schooling; she obtained graduation degree from Scottish Church College in chemistry honors. She then obtained her post-graduate degree in organic chemistry and after which, she completed Ph.D. in 1944. Her research primarily focused on synthetic organic chemistry and chemistry of plant products. Her research revolved around chemistry and it led to the invention of chemotherapy, anti-malarial, and anti-convulsive drugs.",
-      cardB:"None",
-      imageWork:"",
-      imageLegacy:"",
+      cardB:"She was an organic chemist noted for her work in the fields of organic chemistry and phytomedicine. She also authored a considerable volume of work on medicinal plants of the Indian subcontinent. She was the first woman to receive a Doctorate of Science from an Indian university. As she was the first female to receive a doctorate and even started a chemistry department in the Lady Brabourne College of the University of Calcutta she inspired a lot of women in that time of India to pursue their dreams and work as innovators and specialists.",
+      imageWork:"https://upload.wikimedia.org/wikipedia/en/7/7d/Asima_Chatterjee_1.jpg",
+      imageLegacy:"https://upload.wikimedia.org/wikipedia/en/7/7d/Asima_Chatterjee_1.jpg",
       links:[
         "https://en.wikipedia.org/wiki/Asima_Chatterjee",
         "https://www.youtube.com/watch?v=WJyfNQcrwJ4",
@@ -109,7 +109,7 @@ const sciData = [
       imageLegacy:"https://www.earlham.ac.uk/sites/default/files/styles/image_mobile_1x/public/images/articles/Ada%20Lovelace%20inspired/ada-lovelace-inspired-inspiring-analytical-engine.jpg?itok=14DdaBwH",
       links:[ "https://en.wikipedia.org/wiki/Ada_Lovelace", "https://en.wikipedia.org/wiki/Bernoulli_number", "https://www.thoughtco.com/thmb/WCuDeiqnKIsMN3YVwIRdqdRk16E=/650x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ada-a77bc6f9821047e0acb8ccad86bc47f4.jpg"
       ],
-     youtube: " uBbVbqRvqTM",
+     youtube: "uBbVbqRvqTM",
       subtitle: ""
     },
 {
