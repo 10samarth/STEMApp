@@ -110,7 +110,7 @@ const sciData = [
       links:[ "https://en.wikipedia.org/wiki/Ada_Lovelace", "https://en.wikipedia.org/wiki/Bernoulli_number", "https://www.thoughtco.com/thmb/WCuDeiqnKIsMN3YVwIRdqdRk16E=/650x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ada-a77bc6f9821047e0acb8ccad86bc47f4.jpg"
       ],
      youtube: "uBbVbqRvqTM",
-      subtitle: ""
+      subtitle: " 1815-1852"
     },
 {
       name: "Mae Carol Jemison",
@@ -128,7 +128,7 @@ const sciData = [
         "https://en.wikipedia.org/wiki/Mae_Jemison"
       ],
       youtube: "NL_KtO80l7w",
-      subtitle: ""
+      subtitle: "1956-"
     }
   ];
 
