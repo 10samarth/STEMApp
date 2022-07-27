@@ -2,7 +2,15 @@ import { ListItem, Avatar } from "@rneui/themed";
 import { StyleSheet, View} from "react-native";
 
 const Menu = (props) => {
-  const data = props.sciData;
+  var data = {};
+  if (props.module === "Maths"){
+    data = props.mathsData;
+  }
+  else if(props.module === "Science"){
+    data = props.sciData;
+  }
+  //const data = props.sciData;
+  console.log(props);
   return (
     <View style={styles.container}>
       {data.map((l, i) => (
