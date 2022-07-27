@@ -17,7 +17,7 @@ const sciData = [
         "https://www.nobelprize.org/prizes/physics/1903/marie-curie/facts/"
       ],
       youtube: "w6JFRi0Qm_s",
-      subtitle: "1920-1958"
+      subtitle: "1920-19588"
     },
     {
       name: "Rosalind Franklin",
