@@ -1,7 +1,7 @@
 import { ScrollView, StyleSheet, View, Image } from "react-native";
 import React, { useState, useCallback, useRef } from "react";
 import { Text, Card, Button, Icon } from "@rneui/themed";
-import { Linking } from 'react-native';
+import { Linking, Alert } from 'react-native';
 import YoutubePlayer from "react-native-youtube-iframe";
 
 const ContentCard = (props) => {
