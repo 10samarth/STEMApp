@@ -128,7 +128,7 @@ const sciData = [
         "https://en.wikipedia.org/wiki/Mae_Jemison"
       ],
       youtube: "NL_KtO80l7w",
-      subtitle: ""
+      subtitle: "1956-"
     }
   ];
 
