@@ -28,8 +28,21 @@ const sciData = [
     {
       name: "Nikola Tesla",
       avatar_url:
-        "https://images.pexels.com/photos/598745/pexels-photo-598745.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb",
-      subtitle: "1920-1959",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7aee2386094275.5ee15ef7e2716.jpg",
+        birthDate: "8 July 1856",
+        deathDate: "7 January 1943 (aged 86)",
+        awards: ["Grand Officer of the Order of St. Sava (Serbia, 1892)", "Elliott Cresson Medal (Franklin Institute, USA, 1894)", "Grand Cross of the Order of Prince Danilo I (Montenegro, 1895)", "AIEE Edison Medal (Institute of Electrical and Electronics Engineers, USA, 1916)", "Medal of the University of Paris (Paris, France, 1937)"],
+        summary:"Nikola Tesla was a Serbian-American[5][6][7] inventor, electrical engineer, mechanical engineer, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system.",
+        cardA:"Attempting to develop inventions he could patent and market, Tesla conducted a range of experiments with mechanical oscillators/generators, electrical discharge tubes, and early X-ray imaging. He also built a wireless-controlled boat, one of the first-ever exhibited.",
+        cardB:"Tesla's legacy has endured in books, films, radio, TV, music, live theater, comics, and video games. The impact of the technologies invented or envisioned by Tesla is a recurring theme in several types of science fiction.",
+        imageWork:"https://en.wikipedia.org/wiki/Nikola_Tesla#/media/File:TeslaWirelessPower1891.png",
+        imageLegacy:"https://en.wikipedia.org/wiki/File:TeslaPOLYPHASEColumbianEXPO1893rwLIPACKownerA.pdf",
+        links:[
+          "https://en.wikipedia.org/wiki/Nikola_Tesla",
+          "https://www.youtube.com/watch?v=Ok8JDXSYw1U"
+        ],
+        youtube: "Ok8JDXSYw1U",
+        subtitle: "1856-1943",
     },
   ];
 
