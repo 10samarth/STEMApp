@@ -35,8 +35,8 @@ const sciData = [
         summary:"Nikola Tesla was a Serbian-American[5][6][7] inventor, electrical engineer, mechanical engineer, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system.",
         cardA:"Attempting to develop inventions he could patent and market, Tesla conducted a range of experiments with mechanical oscillators/generators, electrical discharge tubes, and early X-ray imaging. He also built a wireless-controlled boat, one of the first-ever exhibited.",
         cardB:"Tesla's legacy has endured in books, films, radio, TV, music, live theater, comics, and video games. The impact of the technologies invented or envisioned by Tesla is a recurring theme in several types of science fiction.",
-        imageWork:"https://en.wikipedia.org/wiki/Nikola_Tesla#/media/File:TeslaWirelessPower1891.png",
-        imageLegacy:"https://en.wikipedia.org/wiki/File:TeslaPOLYPHASEColumbianEXPO1893rwLIPACKownerA.pdf",
+        imageWork:"https://upload.wikimedia.org/wikipedia/commons/3/39/TeslaWirelessPower1891.png",
+        imageLegacy:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/TeslaPOLYPHASEColumbianEXPO1893rwLIPACKownerA.pdf/page1-957px-TeslaPOLYPHASEColumbianEXPO1893rwLIPACKownerA.pdf.jpg",
         links:[
           "https://en.wikipedia.org/wiki/Nikola_Tesla",
           "https://www.youtube.com/watch?v=Ok8JDXSYw1U"
