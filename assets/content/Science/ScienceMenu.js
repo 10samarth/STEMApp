@@ -114,7 +114,7 @@ const sciData = [
           "https://www.youtube.com/watch?v=e5MKu-wWyYA",
           "https://www.nobelprize.org/prizes/chemistry/1935/summary/"
         ],
-        youtube: "Et4cY9msOWw",
+        youtube: "e5MKu-wWyYA",
         subtitle: "1897-1956",
     }
   ];
