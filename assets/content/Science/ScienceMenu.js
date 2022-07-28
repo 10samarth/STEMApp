@@ -22,8 +22,7 @@ const sciData = [
     {
       name: "Rosalind Franklin",
       avatar_url:
-        "https://imgs.search.brave.com/gLAP76Kbidcz4x7y7BqJGhmn5YUb46UW3WR1odkpjcY/rs:fit:570:800:1/g:ce/aHR0cHM6Ly9jb2xs/ZWN0aW9uaW1hZ2Vz/Lm5wZy5vcmcudWsv/bGFyZ2UvbXc2Mjk3/OS9Sb3NhbGluZC1G/cmFua2xpbi5qcGc
-",
+        "https://imgs.search.brave.com/gLAP76Kbidcz4x7y7BqJGhmn5YUb46UW3WR1odkpjcY/rs:fit:570:800:1/g:ce/aHR0cHM6Ly9jb2xs/ZWN0aW9uaW1hZ2Vz/Lm5wZy5vcmcudWsv/bGFyZ2UvbXc2Mjk3/OS9Sb3NhbGluZC1G/cmFua2xpbi5qcGc",
         birthDate: "25 July, 1920",
         deathDate: "16 April , 1958",
         awards: ["Franklin was never nominated for a Nobel Prize, but her work was a crucial part in the discovery of DNA's structure, which along with subsequent related work led to Francis Crick, James Watson, and Maurice Wilkins being awarded a Nobel Prize in 1962. She had died in 1958, and during her lifetime the DNA structure was not considered to be fully proven. It took Wilkins and his colleagues about seven years to collect enough data to prove and refine the proposed DNA structure."],
