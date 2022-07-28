@@ -20,6 +20,25 @@ const sciData = [
       subtitle: "1920-19588"
     },
     {
+      name: "Rosalind Franklin",
+      avatar_url:
+        "https://images.pexels.com/photos/598745/pexels-photo-598745.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb",
+        birthDate: "25 July, 1920",
+        deathDate: "16 April , 1958",
+        awards: ["Franklin was never nominated for a Nobel Prize, but her work was a crucial part in the discovery of DNA's structure, which along with subsequent related work led to Francis Crick, James Watson, and Maurice Wilkins being awarded a Nobel Prize in 1962. She had died in 1958, and during her lifetime the DNA structure was not considered to be fully proven. It took Wilkins and his colleagues about seven years to collect enough data to prove and refine the proposed DNA structure."],
+        summary:"Rosalind Franklin was a British chemist and X-ray crystallographer whose work was central to the understanding of the molecular structures of DNA (deoxyribonucleic acid), RNA (ribonucleic acid), viruses, coal, and graphite.[2] Although her works on coal and viruses were appreciated in her lifetime, her contributions to the discovery of the structure of DNA were largely unrecognized during her life.",
+        cardA:"She studied the porosity of coal using helium to determine its density. Through this, she discovered the relationship between the fine constrictions in the pores of coals and the permeability of the porous space. By concluding that substances were expelled in order of molecular size as temperature increased, she helped classify coals and accurately predict their performance for fuel purposes and for production of wartime devices such as gas masks. This work was the basis of her PhD thesis The physical chemistry of solid organic colloids with special reference to coal for which the University of Cambridge awarded her a PhD in 1945.",
+        cardB:"Franklin is best known for her work on the X-ray diffraction images of DNA while at King's College London, particularly Photo 51, taken by her student Raymond Gosling, which led to the discovery of the DNA double helix for which Francis Crick, James Watson, and Maurice Wilkins shared the Nobel Prize in Physiology or Medicine in 1962.",
+        imageWork:"https://en.wikipedia.org/wiki/Rosalind_Franklin#/media/File:TMV_virus_under_magnification.jpg",
+        imageLegacy:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Rosalind_Franklin_Blue_Plaque.jpg/800px-Rosalind_Franklin_Blue_Plaque.jpg",
+        links:[
+          "https://en.wikipedia.org/wiki/Rosalind_Franklin",
+          "https://www.youtube.com/watch?v=rjB_OKZK2r4"
+        ],
+        youtube: "rjB_OKZK2r4",
+        subtitle: "1920-1959",
+    },
+    {
       name: "Nikola Tesla",
       avatar_url:
         "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7aee2386094275.5ee15ef7e2716.jpg",
@@ -58,6 +77,45 @@ const sciData = [
         subtitle: "1912-1997",
     },
     {
+      name: "Gerty Cori",
+      avatar_url:
+        "https://upload.wikimedia.org/wikipedia/commons/d/d6/Gerty_Theresa_Cori.jpg",
+        birthDate: "August 15, 1896",
+        deathDate: "October 26, 1957 (aged 61)",
+        awards: ["First woman to be awarded the Nobel Prize in Physiology or Medicine"],
+        summary:"Chien-Shiung Wu was a Chinese-American particle and experimental physicist who made significant contributions in the fields of nuclear and particle physics. Wu worked on the Manhattan Project, where she helped develop the process for separating uranium into uranium-235 and uranium-238 isotopes by gaseous diffusion. She is best known for conducting the Wu experiment, which proved that parity is not conserved. This discovery resulted in her colleagues Tsung-Dao Lee and Chen-Ning Yang winning the 1957 Nobel Prize in Physics, while Wu herself was awarded the inaugural Wolf Prize in Physics in 1978.",
+        cardA:"Although Wu ended up doing scientific research, her writing was considered outstanding thanks to her early training. Her Chinese calligraphy was praised by others. Before matriculating to National Central University Wu spent the summer preparing for her studies with her usual full force.",
+        cardB:"From 1930 to 1934, Wu studied at National Central University (now known as Nanjing University) and first majored in mathematics but later transferred to physics. Wu was elected as one of the student leaders by her colleagues. For two years after graduation, she did graduate-level study in physics and worked as an assistant at Zhejiang University. She became a researcher at the Institute of Physics of the Academia Sinica.",
+        imageWork:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Gerty_Theresa_Radnitz_Cori_%281896-1957%29_and_Carl_Ferdinand_Cori_-_restoration1.jpg/800px-Gerty_Theresa_Radnitz_Cori_%281896-1957%29_and_Carl_Ferdinand_Cori_-_restoration1.jpg",
+        imageLegacy:"https://medicine.wustl.edu/wp-content/uploads/CarlGertyCoriInLab-700x467.jpg",
+        links:[
+          "https://en.wikipedia.org/wiki/Gerty_Cori",
+          "https://www.nobelprize.org/prizes/medicine/1947/summary/",
+          "https://www.youtube.com/watch?v=T76s4iBGZ1U"
+        ],
+        youtube: "T76s4iBGZ1U",
+        subtitle: "1896-1957",
+    },
+    {
+      name: "Irène Joliot-Curie",
+      avatar_url:
+      "https://upload.wikimedia.org/wikipedia/commons/a/af/Ir%C3%A8ne_Joliot-Curie_Harcourt.jpg",
+      birthDate: "12 September 1897",
+      deathDate: "17 March 1956 (aged 58)",
+        awards: ["Nobel Prize for Chemistry (1935; jointly)"],
+        summary:"Irène Joliot-Curie was a French chemist, physicist and politician, the elder daughter of Pierre and Marie Curie, and the wife of Frédéric Joliot-Curie. Jointly with her husband, Joliot-Curie was awarded the Nobel Prize in Chemistry in 1935 for their claimed discovery of Induced radioactivity, making them the second-ever married couple (after her parents) to win the Nobel Prize, while adding to the Curie family legacy of five Nobel Prizes. This made the Curies the family with the most Nobel laureates to date.",
+        cardA:"As she neared the end of her doctorate in 1924, Irène Curie was asked to teach the precision laboratory techniques required for radiochemical research to the young chemical engineer Frédéric Joliot, whom she would later wed. From 1928 Joliot-Curie and her husband Frédéric combined their research efforts on the study of atomic nuclei.",
+        cardB:"In 1948, using work on nuclear fission, the Joliot-Curies along with other scientists created the first French nuclear reactor. Irène's group pioneered research into radium nuclei that led a separate group of German physicists, led by Otto Hahn, Lise Meitner, and Fritz Strassman, to discover nuclear fission: the splitting of the nucleus itself, emitting vast amounts of energy. Lise Meitner's now-famous calculations actually disproved Irène's results to show that nuclear fission was possible.",
+        imageWork:"https://cdn.britannica.com/27/1827-050-8B88857B/Irene-Frederic-Joliot-Curie.jpg",
+        imageLegacy:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Irene_and_Marie_Curie_1925.jpg/800px-Irene_and_Marie_Curie_1925.jpg",
+        links:[
+          "https://en.wikipedia.org/wiki/Ir%C3%A8ne_Joliot-Curie",
+          "https://www.youtube.com/watch?v=e5MKu-wWyYA",
+          "https://www.nobelprize.org/prizes/chemistry/1935/summary/"
+        ],
+        youtube: "e5MKu-wWyYA",
+        subtitle: "1897-1956",
+      },{
       name: "Asima Chatterjee",
       avatar_url:
         "https://upload.wikimedia.org/wikipedia/en/7/7d/Asima_Chatterjee_1.jpg",
