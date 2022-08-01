@@ -57,7 +57,46 @@ const mathsData = [
       ],
       youtube: "MxmDphojQUU",
       subtitle: "1920-1958" 
+    },
+    {
+      name: "Isaac Newton",
+      avatar_url:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/440px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg",
+      birthDate: "25 December 1642",
+      deathDate: "20 March 1726",
+      awards: [""],
+      summary:"He was an English mathematician, physicist, astronomer, alchemist, theologian, and author (described in his time as a 'natural philosopher'), widely recognised as one of the greatest mathematicians and physicists of all time and among the most influential scientists. He was a key figure in the philosophical revolution known as the Enlightenment. His book Philosophiæ Naturalis Principia Mathematica (Mathematical Principles of Natural Philosophy), first published in 1687, established classical mechanics. Newton also made seminal contributions to optics, and shares credit with German mathematician Gottfried Wilhelm Leibniz for developing infinitesimal calculus.",
+      cardA:"He was educated at Cambridge University (1661–65), where he discovered the work of René Descartes. His experiments passing sunlight through a prism led to the discovery of the heterogeneous, corpuscular nature of white light and laid the foundation of physical optics. He built the first reflecting telescope in 1668 and became a professor of mathematics at Cambridge in 1669. He worked out the fundamentals of calculus, though this work went unpublished for more than 30 years. His most famous publication, Principia Mathematica (1687), grew out of correspondence with Edmond Halley. Describing his works on the laws of motion (see Newton’s laws of motion), orbital dynamics, tidal theory, and the theory of universal gravitation, it is regarded as the seminal work of modern science. He was elected president of the Royal Society of London in 1703 and became the first scientist ever to be knighted in 1705. During his career he engaged in heated arguments with several of his colleagues, including Robert Hooke (over authorship of the inverse square relation of gravitation) and G.W. Leibniz (over the authorship of calculus). The battle with Leibniz dominated the last 25 years of his life; it is now well established that Newton developed calculus first, but that Leibniz was the first to publish on the subject. Newton is regarded as one of the greatest scientists of all time.",
+      cardB:"Isaac Newton changed the way we understand the Universe. Revered in his own lifetime, he discovered the laws of gravity and motion and invented calculus. He helped to shape our rational world view. But Newton's story is also one of a monstrous ego who believed that he alone was able to understand God's creation.",
+      imageWork:"https://cdn.britannica.com/62/147562-050-42020E12/Isaac-Newton-sunlight-study-optics-prism-engraving-1879.jpg",
+      imageLegacy:"https://libraries.blogs.delaware.gov/files/2012/06/newton-300x207.jpg",
+      links:[
+        "https://en.wikipedia.org/wiki/Isaac_Newton#Works",
+        "https://www.youtube.com/watch?v=PCxP24qj2UQ"
+      ],
+      youtube: "PCxP24qj2UQ",
+      subtitle: "1642-1726" 
+    },
+    {
+      name: "Sofya Kovalevskaya",
+      avatar_url:
+        "https://upload.wikimedia.org/wikipedia/commons/f/f6/Sofja_Wassiljewna_Kowalewskaja_1.jpg",
+      birthDate: "15 January 1850",
+      deathDate: "10 February 1891",
+      awards: [""],
+      summary:"was a Russian mathematician who made noteworthy contributions to analysis, partial differential equations and mechanics. She was a pioneer for women in mathematics around the world – the first woman to obtain a doctorate (in the modern sense) in mathematics, the first woman appointed to a full professorship in northern Europe and one of the first women to work for a scientific journal as an editor.[1] According to historian of science Ann Hibner Koblitz, Kovalevskaya was 'the greatest known woman scientist before the twentieth century'",
+      cardA:"The following year she moved to Berlin, where, having been refused admission to the university on account of her gender, she studied privately with the mathematician Karl Weierstrass. In 1874 she presented three papers—on partial differential equations, on Saturn’s rings, and on elliptic integrals—to the University of Göttingen as her doctoral dissertation and was awarded the degree, summa cum laude, in absentia. Her paper on partial differential equations, the most important of the three papers, won her valuable recognition within the European mathematical community. It contains what is now commonly known as the Cauchy-Kovalevskaya theorem, which gives conditions for the existence of solutions to a certain class of partial differential equations. Having gained her degree, she returned to Russia, where her daughter was born in 1878. She separated permanently from her husband in 1881. In 1883 Kovalevskaya accepted Magnus Mittag-Leffler’s invitation to become a lecturer in mathematics at the University of Stockholm. She was promoted to full professor in 1889. In 1884 she joined the editorial board of the mathematical journal Acta Mathematica, and in 1888 she became the first woman to be elected a corresponding member of the Russian Academy of Sciences. In 1888 she was awarded the Prix Bordin of the French Academy of Sciences for a paper on the rotation of a solid body around a fixed point.",
+      cardB:"Sonya Kovalevsky High School Mathematics Day is a grant-making program of the Association for Women in Mathematics (AWM), funding workshops across the United States which encourage girls to explore mathematics. While the AWM currently does not have grant money to support this program, multiple universities continue the program with their own funding.The Sonya Kovalevsky Lecture is sponsored annually by the AWM and the Society for Industrial and Applied Mathematics, and is intended to highlight significant contributions of women in the fields of applied or computational mathematics. The Kovalevskaia Fund, founded in 1985 with the purpose of supporting women in science in developing countries, was named in her honor. The lunar crater Kovalevskaya is named in her honor. A gymnasium (high school) and progymnasium in Vilnius and gymnasium in Velikiye Luki are named after Sofya Kovalevskaya. The Alexander Von Humboldt Foundation of Germany bestows a bi-annual Sofia Kovalevskaya Award to promising young researchers. Saint Petersburg, Moscow, and Stockholm have streets named in honor of Kovalevskaya.",
+      imageWork:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Sofya_Kovalevskaya_at_18.jpg/340px-Sofya_Kovalevskaya_at_18.jpg",
+      imageLegacy:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Sofya_Kovalevskaya%2C_1890.jpg/340px-Sofya_Kovalevskaya%2C_1890.jpg",
+      links:[
+        "https://en.wikipedia.org/wiki/Sofya_Kovalevskaya",
+        "https://www.youtube.com/watch?v=pGpUGuhJVIA"
+      ],
+      youtube: "pGpUGuhJVIA",
+      subtitle: "1850-1891" 
     }
+
   ];
 
  export default mathsData;
