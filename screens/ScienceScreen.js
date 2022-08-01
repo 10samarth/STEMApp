@@ -14,7 +14,6 @@ function ScienceScreen({navigation}) {
 
   return (
     <View style={styles.appContainer}>
-      <Text>Menu</Text>
       <Menu {... props}/>
     </View>
   );
