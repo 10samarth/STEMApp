@@ -64,7 +64,7 @@ const mathsData = [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/440px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg",
       birthDate: "25 December 1642",
       deathDate: "20 March 1726",
-      awards: [""],
+      awards: ["A knighthood, the top mathematics professor at Cambridge University, admission to the Royal Society, a seat in Parliament and burial in Westminster Abbey."],
       summary:"He was an English mathematician, physicist, astronomer, alchemist, theologian, and author (described in his time as a 'natural philosopher'), widely recognised as one of the greatest mathematicians and physicists of all time and among the most influential scientists. He was a key figure in the philosophical revolution known as the Enlightenment. His book Philosophiæ Naturalis Principia Mathematica (Mathematical Principles of Natural Philosophy), first published in 1687, established classical mechanics. Newton also made seminal contributions to optics, and shares credit with German mathematician Gottfried Wilhelm Leibniz for developing infinitesimal calculus.",
       cardA:"He was educated at Cambridge University (1661–65), where he discovered the work of René Descartes. His experiments passing sunlight through a prism led to the discovery of the heterogeneous, corpuscular nature of white light and laid the foundation of physical optics. He built the first reflecting telescope in 1668 and became a professor of mathematics at Cambridge in 1669. He worked out the fundamentals of calculus, though this work went unpublished for more than 30 years. His most famous publication, Principia Mathematica (1687), grew out of correspondence with Edmond Halley. Describing his works on the laws of motion (see Newton’s laws of motion), orbital dynamics, tidal theory, and the theory of universal gravitation, it is regarded as the seminal work of modern science. He was elected president of the Royal Society of London in 1703 and became the first scientist ever to be knighted in 1705. During his career he engaged in heated arguments with several of his colleagues, including Robert Hooke (over authorship of the inverse square relation of gravitation) and G.W. Leibniz (over the authorship of calculus). The battle with Leibniz dominated the last 25 years of his life; it is now well established that Newton developed calculus first, but that Leibniz was the first to publish on the subject. Newton is regarded as one of the greatest scientists of all time.",
       cardB:"Isaac Newton changed the way we understand the Universe. Revered in his own lifetime, he discovered the laws of gravity and motion and invented calculus. He helped to shape our rational world view. But Newton's story is also one of a monstrous ego who believed that he alone was able to understand God's creation.",
@@ -95,7 +95,27 @@ const mathsData = [
       ],
       youtube: "pGpUGuhJVIA",
       subtitle: "1850-1891" 
+    },
+    {
+      name: "Mae Carol Jemison",
+      avatar_url:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Mae_Carol_Jemison.jpg/440px-Mae_Carol_Jemison.jpg",
+      birthDate: "17 ctober 1956",
+      deathDate: "",
+      awards: ["Sylvanus Thayer Award","Elizabeth Blackwell Medal"],
+      summary:"She is an American engineer, physician, and former NASA astronaut. She became the first black woman to travel into space when she served as a mission specialist aboard the Space Shuttle Endeavour. Jemison joined NASA's astronaut corps in 1987 and was selected to serve for the STS-47 mission, during which she orbited the Earth for nearly eight days on September 12–20, 1992.",
+      cardA:"As a doctor, engineer, and NASA astronaut, Mae Jemison has always reached for the stars. In 1992, Jemison became the first African American woman to travel in space. She has also written several books and appeared on many television programs including an episode of Star Trek: The Next Generation. In addition to her many awards, Jemison has been inducted into the National Women's Hall of Fame and the International Space Hall of Fame.",
+      cardB:"Currently, Jemison is leading the 100 Year Starship project through the United States Defense Advanced Research Projects Agency (DARPA). This project works to make sure human space travel to another star is possible within the next 100 years. She also serves on the Board of Directors for many organizations including; the Kimberly-Clark Corp., Scholastic, Inc., Valspar Corp., Morehouse College, Texas Medical Center, Texas State Product Development and Small Business Incubator, Greater Houston Partnership Disaster Planning and Recovery Task Force, and the National Institute of Biomedical Imaging and Bioengineering. Jemison is a member of the National Academy of Sciences’ Institute of Medicine, and has been inducted into the National Women’s Hall of Fame, National Medical Association Hall of Fame and Texas Science Hall of Fame. She has received multiple awards and honorary degrees including the National Organization for Women’s Intrepid Award and the Kilby Science Award. She currently lives in Houston, Texas.",
+      imageWork:"https://media.gettyimages.com/photos/official-portrait-of-the-crew-of-space-shuttle-mission-sts47-american-picture-id1268503017?s=612x612",
+      imageLegacy:"http://www.nasa.gov/sites/default/files/thumbnails/image/ksc-92pc-1881.jpg",
+      links:[
+        "https://en.wikipedia.org/wiki/Mae_Jemiso",
+        "https://www.youtube.com/watch?v=GwgyEZ5G0wk"
+      ],
+      youtube: "GwgyEZ5G0wk",
+      subtitle: "1956-" 
     }
+
 
   ];
 
