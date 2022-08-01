@@ -8,9 +8,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import MathsScreen from './screens/MathsScreen';
 import ScienceScreen from './screens/ScienceScreen';
-import StoriesScreen from './screens/StoriesScreen';
+import CareerScreen from './screens/CareerScreen';
 import ContentCard from './components/Cards/ContentCard';
 import Menu from './components/Menu';
+import Quiz from './components/Quiz'
+import Results from './components/Results'
 
 function HomeScreen({ navigation }) {
   return (
@@ -33,9 +35,9 @@ function HomeScreen({ navigation }) {
       <View style={styles.space} />
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate("Stories")}
+        onPress={() => navigation.navigate("Career")}
       >
-        <Text style={styles.buttonText}>Stories</Text>
+        <Text style={styles.buttonText}>Career</Text>
       </TouchableOpacity>
     </View>
   );
@@ -50,9 +52,11 @@ function App() {
         <Stack.Screen name="I ❤️ STEM" component={HomeScreen} />
         <Stack.Screen name="Science" component={ScienceScreen} />
         <Stack.Screen name="Maths" component={MathsScreen} />
-        <Stack.Screen name="Stories" component={StoriesScreen} />
+        <Stack.Screen name="Career" component={CareerScreen} />
         <Stack.Screen name="Article" component={ContentCard} />
         <Stack.Screen name="Menu" component={Menu} />
+        <Stack.Screen name="Quiz" component={Quiz} />
+        <Stack.Screen name="Results" component={Results} />
       </Stack.Navigator>
     </NavigationContainer>
   );

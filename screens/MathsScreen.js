@@ -11,7 +11,6 @@ function MathsScreen({navigation}) {
   
   return (
     <View style={styles.appContainer}>
-      <Text>Math Menu</Text>
       <Menu {... props}/>
     </View>
   );

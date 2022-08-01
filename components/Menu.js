@@ -1,5 +1,5 @@
 import { ListItem, Avatar } from "@rneui/themed";
-import { StyleSheet, View} from "react-native";
+import { StyleSheet, ScrollView, View} from "react-native";
 
 const Menu = (props) => {
   var data = {};
@@ -9,10 +9,9 @@ const Menu = (props) => {
   else if(props.module === "Science"){
     data = props.sciData;
   }
-  //const data = props.sciData;
-  console.log(props);
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
+    <View >
       {data.map((l, i) => (
         <ListItem
           key={i}
@@ -31,6 +30,7 @@ const Menu = (props) => {
         </ListItem>
       ))}
     </View>
+    </ScrollView>
   );
 };
 

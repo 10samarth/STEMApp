@@ -35,18 +35,32 @@ const ContentCard = (props) => {
 
             <Text style={{ marginBottom: 5, marginTop: 5 }}>
               Awards:{" "}
-              {data.awards.map((u, i) => {
+              {data.awards.slice(0,data.awards.length-1).map((u, i) => {
                 return (
-                  <Text key={i} style={{ marginBottom: 5, marginTop: 5 }}>{u} </Text>
+                  <Text key={i} style={{ marginBottom: 5, marginTop: 5 }}>{u}, </Text>
                 );
               })}
+
+                  <Text key={data.awards.length-1} style={{ marginBottom: 5, marginTop: 5 }}>{data.awards[data.awards.length-1]}</Text>
             </Text>
 
             <Text style={{ marginBottom: 5, marginTop: 5 }}>
               {data.summary}
             </Text>
           </Card>
-
+          <Card>
+            <Card.Title>Video</Card.Title>
+            <Card.Divider />
+            <View style={{ flex: 1 }}>
+              <YoutubePlayer
+                height={200}
+                play={playing}
+                videoId={data.youtube}
+                onChangeState={onStateChange}
+                webViewStyle={ {opacity:0.99} }
+              />
+            </View>
+          </Card>
           <Card>
             <Card.Title>Work</Card.Title>
             <Card.Divider />
@@ -73,19 +87,7 @@ const ContentCard = (props) => {
             <Text style={{ marginBottom: 5, marginTop: 5 }}>{data.cardB}</Text>
           </Card>
 
-          <Card>
-            <Card.Title>Video</Card.Title>
-            <Card.Divider />
-            <View style={{ flex: 1 }}>
-              <YoutubePlayer
-                height={200}
-                play={playing}
-                videoId={data.youtube}
-                onChangeState={onStateChange}
-                webViewStyle={ {opacity:0.99} }
-              />
-            </View>
-          </Card>
+          
 
           <Card>
             <Card.Title>Reference</Card.Title>
