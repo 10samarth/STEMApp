@@ -148,6 +148,55 @@ const mathsData = [
     youtube: "GwgyEZ5G0wk",
     subtitle: "1956-",
   },
+  {
+    name: "Euphemia Haynes",
+    avatar_url:
+      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Haynes_euphemia.jpg",
+    birthDate: "11 September 1890",
+    deathDate: "25 July, 1980 (aged 89)",
+    awards: ["Pope John XXIII awarded her the Papal decoration of honor, Pro Ecclesia et Pontifice, in 1959"],
+    summary:
+      "Euphemia Yanes was an American mathematician and educator. She was the first African American woman to earn a PhD in mathematics, which she earned from the Catholic University of America in 1943.",
+    cardA:
+      "She taught mathematics and served as chair of the Math Department at Dunbar High School. Haynes was a professor of mathematics at University of the District of Columbia where she was chair of the Division of Mathematics and Business Education, a department she created dedicated to training African American teachers.",
+    cardB:
+      "She retired in 1959 from the public school system, but went on to establish the mathematics department at University of the District of Columbia. She published, The Historical Development of Tests in Elementary and Secondary Mathematics in 1930, and the Determination of Sets of Independent Conditions Characterizing Certain Special Cases of Symmetric Correspondences, in 1943.",
+    imageWork:
+      "https://pbs.twimg.com/media/E-_k3jhWEAEKWtc.jpg",
+    imageLegacy:
+      "https://mathwomen.agnesscott.org/women/haynes2.jpg",
+    links: [
+      "https://en.wikipedia.org/wiki/Euphemia_Haynes",
+      "https://www.youtube.com/watch?v=oCNbRWRAqyQ",
+      "https://www.biography.com/scientist/euphemia-lofton-haynes",
+    ],
+    youtube: "oCNbRWRAqyQ",
+    subtitle: "1890-1980",
+  },
+  {
+    name: "Maria Gaetana Agnesi",
+    avatar_url:
+      "https://upload.wikimedia.org/wikipedia/commons/5/57/Maria_Gaetana_Agnesi.jpg",
+    birthDate: "16 May 1718",
+    deathDate: "9 January 1799 (aged 80)",
+    awards: ["Gold medal and a gold wreath adorned with precious stones presented by Pope Benedict XIV in honor of her publication of Instituzioni Analitiche(1749); Crystal box with diamonds and a diamond ring given by Empress Maria Theresa of Austria to whom Instituzioni Analitiche was dedicated (1749)"],
+    summary:
+      "Maria Gaetana Agnesi was an Italian mathematician, philosopher, theologian, and humanitarian. She was the first woman to write a mathematics handbook and the first woman appointed as a mathematics professor at a university. She is credited with writing the first book discussing both differential and integral calculus and was a member of the faculty at the University of Bologna.",
+    cardA:
+      "The most valuable result of her labours was the Instituzioni analitiche ad uso della gioventù italiana, (Analytical Institutions for the Use of Italian Youth) which was published in Milan in 1748 and was regarded as the best introduction extant to the works of Euler. The goal of this work was, according to Agnesi herself, to give a systematic illustration of the different results and theorems of infinitesimal calculus. The model for her treatise was Le calcul différentiel et intégral dans l’Analyse by Charles René Reyneau. In this treatise, she worked on integrating mathematical analysis with algebra. The first volume treats the analysis of finite quantities and the second of the analysis of infinitesimals.",
+    cardB:
+      "In 1996, an asteroid, 16765 Agnesi, was named after Agnesi. There is also a crater on Venus named Agnesi after her, as well as a mathematical curve named the Witch of Agnesi.",
+    imageWork:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Il_frontispizio_delle_Instituzioni_analitiche_dell%27_Agnesi.png/800px-Il_frontispizio_delle_Instituzioni_analitiche_dell%27_Agnesi.png",
+    imageLegacy:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/5407_-_Palazzo_di_Brera%2C_Milano_-_Busto_a_Gaetana_Agnesi_-_Foto_Giovanni_Dall%27Orto%2C_1-Oct-2011.jpg/800px-5407_-_Palazzo_di_Brera%2C_Milano_-_Busto_a_Gaetana_Agnesi_-_Foto_Giovanni_Dall%27Orto%2C_1-Oct-2011.jpg",
+    links: [
+      "https://en.wikipedia.org/wiki/Maria_Gaetana_Agnesi",
+      "https://www.youtube.com/watch?v=trwsdpxGL2I",
+    ],
+    youtube: "trwsdpxGL2I",
+    subtitle: "1718-1799",
+  },
 ];
 
  export default mathsData;
