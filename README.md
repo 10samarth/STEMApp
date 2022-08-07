@@ -12,8 +12,4 @@ Kids are pushed by STEM applications to broaden their minds, explore, solve prob
 
 ## App demo screens
 ![enter image description here](https://raw.githubusercontent.com/10samarth/STEMApp/master/Demo/Screen%20Shot%202022-08-07%20at%2015.57.08.png?token=GHSAT0AAAAAABWDIFXO2QTFVPNCUWG5MJUCYXQKJWQ)
-![enter image description here](https://raw.githubusercontent.com/10samarth/STEMApp/master/Demo/Screen%20Shot%202022-08-07%20at%2015.57.49.png?token=GHSAT0AAAAAABWDIFXPPKH5IAQGYQYWDYNIYXQKKIQ)
-![enter image description here](https://raw.githubusercontent.com/10samarth/STEMApp/master/Demo/Screen%20Shot%202022-08-07%20at%2015.58.23.png?token=GHSAT0AAAAAABWDIFXOGQPP6RRX67D2OMLIYXQKK4A)
-![enter image description here](https://raw.githubusercontent.com/10samarth/STEMApp/master/Demo/Screen%20Shot%202022-08-07%20at%2015.58.31.png?token=GHSAT0AAAAAABWDIFXOPERIUDEYXSP7DIFKYXQKLIA)
-![enter image description here](https://raw.githubusercontent.com/10samarth/STEMApp/master/Demo/Screen%20Shot%202022-08-07%20at%2015.58.38.png?token=GHSAT0AAAAAABWDIFXO5AMVJJZQNHHYGKXGYXQKLTQ)
-![enter image description here](https://raw.githubusercontent.com/10samarth/STEMApp/master/Demo/Screen%20Shot%202022-08-07%20at%2015.59.13.png?token=GHSAT0AAAAAABWDIFXOBYGXRN3I2VCWILTOYXQKJRA)
+
