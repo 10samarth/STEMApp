@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { View, StyleSheet, StatusBar, Text, SafeAreaView } from "react-native";
-
+import {
+  View,
+  StyleSheet,
+  StatusBar,
+  Text,
+  SafeAreaView,
+  ScrollView,
+  Image
+} from "react-native";
+import { C, En, IAMDataMap, M, P, Su, T } from "../types/type";
 import { Button, ButtonContainer } from "./Button";
+import { PersonalityMap } from "../types/type";
 
 const styles = StyleSheet.create({
   container: {
@@ -20,71 +29,135 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 100,
     justifyContent: "space-between",
+  },space: {
+    width: 20,
+    height: 65,
   },
 });
 
 function Quiz(props) {
-
-    const [state, setState] = useState({
-    correctCount: 0,
-    totalCount: props.route.params.questions.length,
-    activeQuestionIndex: 0,
-    answered: false,
-    answerCorrect: false,
+  let IAMChunk = [];
+  const chunkSize = 4;
+  for (let i = 0; i < IAMDataMap.length; i += chunkSize) {
+    const chunk = IAMDataMap.slice(i, i + chunkSize);
+    IAMChunk.push(chunk);
+  }
+   
+  const [state, setState] = useState({
+    count: 0,
+    ansId: 0,
+    E:0,
+    I:0,
+    D:0,
+    S:0,
+    R:0,
+    En:0,
+    C:0,
+    T:0,
+    P:0,
+    Su:0,
+    M:0,
+    Po:0,
+    savAns:[]
   });
 
-  useEffect(() => {
-    if (state.activeQuestionIndex >= state.totalCount) {
-        props.navigation.navigate("Results")
-        state.activeQuestionIndex = state.activeQuestionIndex - 1;
-      }
-  }, [state])
-
-  
-  const ans = (correct) => {
+ 
+  const recAns = (ans) => {
     setState(state => {
-      const nextState = { answered: true };
+      const nextState = {savAns:[...state.savAns, ans]}  
+      nextState.count = state.count + 1;
+      nextState.ansId = state.ansId
+      nextState.E = state.E
+      nextState.I = state.I
+      nextState.D = state.D
+      nextState.S = state.S
+      nextState.R = state.R
+      nextState.En = state.En
+      nextState.C = state.C
+      nextState.T = state.T
+      nextState.P = state.P
+      nextState.Su = state.Su
+      nextState.M = state.M
+      nextState.Po = state.Po
 
-      if (correct) {
-        nextState.correctCount = state.correctCount + 1;
-        nextState.answerCorrect = true;
-      } else {
-        nextState.answerCorrect = false;
-        nextState.correctCount = state.correctCount 
+      if (PersonalityMap.E.has(ans)) {
+        nextState.E++;
       }
-      nextState.activeQuestionIndex = state.activeQuestionIndex + 1;
-      nextState.totalCount = state.totalCount
-
-      if (nextState.activeQuestionIndex >= nextState.totalCount) {
-        props.navigation.navigate("Results")
-        nextState.activeQuestionIndex = nextState.activeQuestionIndex - 1;
+      if (PersonalityMap.I.has(ans)) {
+        nextState.I++;
+      }
+      if (PersonalityMap.D.has(ans)) {
+        nextState.D++;
+      }
+      if (PersonalityMap.S.has(ans)) {
+        nextState.S++;
+      }
+      if (PersonalityMap.R.has(ans)) {
+        nextState.R++;
+      }
+      if (PersonalityMap.En.has(ans)) {
+        nextState.En++;
+      }
+      if (PersonalityMap.C.has(ans)) {
+        nextState.C++;
+      }
+      if (PersonalityMap.T.has(ans)) {
+        nextState.T++;
+      }
+      if (PersonalityMap.P.has(ans)) {
+        nextState.P++;
+      }
+      if (PersonalityMap.Su.has(ans)) {
+        nextState.Su++;
+      }
+      if (PersonalityMap.M.has(ans)) {
+        nextState.M++;
+      }
+      if (PersonalityMap.Po.has(ans)) {
+        nextState.Po++;
       }
 
+      if (nextState.count >= IAMChunk.length-1) {
+        props.navigation.navigate("Results",{
+          data: {nextState} 
+        })
+        nextState.count = nextState.count - 1;
+      }
       return nextState;
     });
   };
 
-  const questions = props.route.params.questions;
-  const question = questions[state.activeQuestionIndex];
+  const prompt = "Choose the adjective that best describe you?";
+  const options = IAMChunk[state.count];
   return (
     <View
       style={[styles.container, { backgroundColor: props.route.params.color }]}
     >
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={styles.safearea}>
-        <View>
-          <Text style={styles.text}>{question.question}</Text>
+        <ScrollView>
+          <Text style={styles.text}>{prompt}</Text>
 
           <ButtonContainer>
-            {question.answers.map((answer) => (
-              <Button
-                key={answer.id}
-                text={answer.text}
-                onPress={() => ans(answer.correct)}
-              />
-            ))}
+            {options &&
+              options.map((ans) => {
+                return (
+                  <Button
+                    key={state.ansId++}
+                    text={ans}
+                    onPress={() => recAns(ans)}
+                  />
+                );
+              })}
           </ButtonContainer>
-        </View>
+          <View style={styles.space} />
+          <Image
+        style={{ padding: 0, width: "100%", height: 200 }}
+        resizeMode="contain"
+        source={require("../assets/thinking.webp")}
+      />
+
+        </ScrollView>
       </SafeAreaView>
     </View>
   );

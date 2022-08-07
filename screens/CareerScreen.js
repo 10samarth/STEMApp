@@ -2,9 +2,12 @@ import {
   StyleSheet,
   View,
   Text,
+  Image,
   TouchableHighlight,
   TouchableOpacity,
+  SafeAreaView,
 } from "react-native";
+import { Button, ButtonContainer } from "../components/Button";
 import quizQuestions from "../assets/quiz/questions";
 
 function CareerScreen({ navigation }) {
@@ -14,15 +17,26 @@ function CareerScreen({ navigation }) {
     color: "#1a82eb",
   };
   return (
-    <View style={styles.appContainer}>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() =>
-          navigation.navigate("Quiz", {...props})
-        }
-      >
-        <Text style={styles.buttonText}>Take Career Quiz</Text>
-      </TouchableOpacity>
+    <View style={[styles.container, { backgroundColor: "#1a82eb" }]}>
+      <SafeAreaView style={styles.safearea}>
+      <Image
+        style={{ padding: 0, width: "60%", height: 200 }}
+        resizeMode="contain"
+        source={require("../assets/career.png")}
+      />
+        <View style={styles.space} />
+        <Text style={styles.text}>
+          Answer these ten questions and find where people like you are happy
+          and successful in their work and see if these ideas appeal to you
+        </Text>
+        <View style={styles.space} />
+        <ButtonContainer>
+          <Button
+            text="Start"
+            onPress={() => navigation.navigate("Quiz", { ...props })}
+          />
+        </ButtonContainer>
+      </SafeAreaView>
     </View>
   );
 }
@@ -30,49 +44,35 @@ function CareerScreen({ navigation }) {
 export default CareerScreen;
 
 const styles = StyleSheet.create({
-  appContainer: {
+  container: {
+    backgroundColor: "#36B1F0",
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    paddingHorizontal: 20,
+    
   },
-  buttonText: {
+
+  text: {
     color: "#fff",
-    fontSize: 18
+    fontSize: 25,
+    textAlign: "center",
+    letterSpacing: -0.02,
+    fontWeight: "600",
   },
-  aButtonText: {
-    color: "#fff",
-    fontSize: 18
-  },
-  button: {
-    padding:5,
-    height:60,
-    width:260,
-    backgroundColor:'#f31282',
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius:15,
-    shadowOpacity: 1,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 0 },
-    shadowColor: '#F31247',
-    elevation: 5
-  },
-  aButton: {
-    padding:5,
-    height:60,
-    width:260,
-    backgroundColor:'#b180f0',
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius:15,
-    shadowOpacity: 1,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 0 },
-    shadowColor: '#9B80F0',
-    elevation: 5
-  },
+
   space: {
     width: 20,
     height: 35,
+  },
+
+  safearea: {
+   
+    marginTop: 100,
+    alignItems: "center",
+     
+  },
+
+  space: {
+    width: 20,
+    height: 15,
   },
 });
