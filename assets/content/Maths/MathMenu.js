@@ -148,6 +148,56 @@ const mathsData = [
     youtube: "trwsdpxGL2I",
     subtitle: "1718-1799",
   },
+  {
+    name: "Marjorie Lee Browne",
+    avatar_url:
+      "https://upload.wikimedia.org/wikipedia/en/b/b9/Marjorie_Lee_Browne.jpg",
+    birthDate: "2 July 1914",
+    deathDate: "October 19 1979 (aged 65)",
+    awards: ["First recipient of W. W. Rankin Memorial Award for Excellence in Mathematics Education, Elected to Sigma Xi 1948, National Science Foundation Faculty Fellow studying computing and numerical analysis at UCLA"],
+    summary:
+      "Marjorie Lee Browne was a mathematics educator. She was one of the first African-American women to receive a PhD in mathematics.",
+    cardA:
+      "Browne's work on classical groups demonstrated simple proofs of important topological properties of and relations between classical groups. Her work in general focused on linear and matrix algebra.",
+    cardB:
+      "Browne saw the importance of computer science early on, writing a $60,000 grant to IBM to bring a computer to NCCU in 1960—one of the first computers in academic computing, and probably the first at a historically black school.",
+    imageWork:
+      "https://miro.medium.com/max/1200/0*gJmFKad2rarQx8ml.jpg",
+    imageLegacy:
+      "https://pbs.twimg.com/media/EMCt1sVWwAAKXOs?format=jpg&name=large",
+    links: [
+      "https://en.wikipedia.org/wiki/Marjorie_Lee_Browne",
+      "https://www.youtube.com/watch?v=J23HEnQ1mvE",
+      "https://mathshistory.st-andrews.ac.uk/Biographies/Browne/",
+    ],
+    youtube: "J23HEnQ1mvE",
+    subtitle: "1914-1979",
+  },
+  {
+    name: "Fan-Rong King Chung Graham",
+    avatar_url:
+      "https://upload.wikimedia.org/wikipedia/commons/3/34/Fan_Chung.jpg",
+    birthDate: "9 October, 1949",
+    deathDate: "N/A",
+    awards: ["Allendoerfer Award of Mathematical Association of America (1990), Fellow, American Mathematics Society (2013), Euler Medal of Institute of Combinatorics and its Applications (2017)"],
+    summary:
+      "Fan-Rong King Chung Graham (Chinese: 金芳蓉; pinyin: Jīn Fāngróng; born October 9, 1949), known professionally as Fan Chung, is a Taiwanese-born American mathematician who works mainly in the areas of spectral graph theory, extremal graph theory and random graphs, in particular in generalizing the Erdős–Rényi model for graphs with general degree distribution (including power-law graphs in the study of large information networks).",
+    cardA:
+      "Among Fan Chung's publications, her contributions to spectral graph theory are important to this area of graph theory. From the first publications about undirected graphs to recent publications about directed graphs, Fan Chung creates the solid base in the spectral graph theory to the future graph theorist. Fan Chung's work in random graph models shed new light on the field of network science. Many real-world large information networks (such as Internet Graphs, Call Graphs, and Collaboration Graphs, etc.) have been observed to be well approximated by a power law distribution. Fan Chung's work in the Chung-Lu model, pioneered the theory of treating random graphs with arbitrary degree distributions, including the power law graphs.",
+    cardB:
+      "In 2006, the American Mathematics Society and the Conference Board of the Mathematical Sciences co-published Fan Chung and Linyuan Lu's book Complex Graphs and Networks. The book gave a well-structured exposition for using combinatorial, probabilistic, spectral methods as well as other new and improved tools to analyze real-world large information networks. Fan Chung, together with Ronald Graham and Richard Wilson, introduced a strong notion of equivalence among graph properties through the control of error bounds and developed the theory of quasi-random graphs. In a series of research papers (with several coauthors), she showed that a large family of graph properties is equivalent in the sense that if a graph satisfies any one of the properties, it must satisfy all of them.",
+    imageWork:
+      "https://anthonybonato.files.wordpress.com/2016/04/doc11.jpg?w=900",
+    imageLegacy:
+      "https://mathweb.ucsd.edu/~fan/graphs/gallery/colla.jpg",
+    links: [
+      "https://en.wikipedia.org/wiki/Fan_Chung",
+      "https://www.youtube.com/watch?v=GxyoDeJcmiE", 
+      "https://mathshistory.st-andrews.ac.uk/Biographies/Chung/"
+    ],
+    youtube: "GxyoDeJcmiE",
+    subtitle: "1949 - present",
+  },
 ];
 
  export default mathsData;
