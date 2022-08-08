@@ -11,5 +11,4 @@ Kids are pushed by STEM applications to broaden their minds, explore, solve prob
  - `npm start`
 
 ## App demo screens
-![enter image description here](https://raw.githubusercontent.com/10samarth/STEMApp/master/Demo/Screen%20Shot%202022-08-07%20at%2015.57.08.png?token=GHSAT0AAAAAABWDIFXO2QTFVPNCUWG5MJUCYXQKJWQ)
-
+![enter image description here](https://raw.githubusercontent.com/10samarth/STEMApp/master/Demo/Screen%20Shot%202022-08-07%20at%2015.57.08.png?token=GHSAT0AAAAAABWDIFXOG2IDSBGKXPKOCOK6YXQMYTQ)
